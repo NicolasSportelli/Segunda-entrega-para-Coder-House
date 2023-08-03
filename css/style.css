@@ -41,14 +41,15 @@ nav {
 .menu-nav {
     margin-bottom: unset;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
 }
 
 .menu-nav li {
     list-style: none;
     padding: 10px;
-    border-right: solid rgb(179, 8, 8) 1px;
+    border-botto: solid rgb(179, 8, 8) 1px;
     font-size: 15px;
 }
 
@@ -61,6 +62,10 @@ nav ul li a:hover {
     background-color: rgb(179, 8, 8);
 }
 
+.navbar-brand  {
+    margin-right: 0
+}
+
 .redes-sociales a img {
     padding: 10px;
     width: 40px;
@@ -69,6 +74,7 @@ nav ul li a:hover {
 .img img {
     width: 30px;
     margin: 10px;
+    transition: all .5s
 }
 
 
@@ -76,6 +82,16 @@ nav ul li a:hover {
     color: rgb(236, 225, 225);
     background-color: rgb(39, 34, 34);
     border-radius: 5px;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrusel {
+    width: auto;
 }
 
 
@@ -134,46 +150,13 @@ nav ul li a:hover {
 
 
 /* main QUIEN SOY*/
-
-.quien-soy {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* Dos columnas de igual tamaño */
-    gap: 20px;
-    /* Espacio entre las dos columnas */
-}
-
-.qs-1 {
-    /* Ocupa la primera columna */
-    grid-column: 1;
-}
-
-.qs-2 {
-    /* Ocupa la segunda columna */
-    grid-column: 2;
-}
-
-/* Si deseas que los elementos dentro de .qs-2 también se muestren en una cuadrícula interna */
-.qs-2 {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    /* Ajusta las filas según el contenido */
-    gap: 10px;
-    /* Espacio entre las filas */
-}
-
-/* Por ejemplo, si deseas que los elementos dentro de .qs-2 ocupen filas separadas */
-.qs-2 h2,
-.qs-2 h3,
-.qs-2 h4,
-.qs-2 p {
-    grid-column: 1;
+.qs__img{
+    width: 100%;
 }
 
 .quien-soy {
-    height: 45rem;
+    flex-direction: column;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -224,7 +207,6 @@ nav ul li a:hover {
 .qs-2 p {
     text-align: center;
     margin: 20px;
-    width: 500px;
 
 }
 
@@ -255,7 +237,6 @@ nav ul li a:hover {
 
 .servicios {
     align-items: center;
-    height: 80vh;
     display: flex;
     padding: 20px;
     text-align: center;
@@ -291,8 +272,6 @@ nav ul li a:hover {
     padding: 10px;
     border-radius: 15px;
     border: solid rgb(44, 41, 41) 3px;
-    width: 500px;
-    height: 300px;
     text-align: center;
 }
 
@@ -523,6 +502,12 @@ form label span {
 footer {
     background-color: rgb(133, 9, 9);
     cursor: pointer;
+    padding: 10px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .redes-sociales-2 a img {
@@ -534,15 +519,6 @@ footer {
 .img img {
     width: 30px;
 }
-
-.footer {
-    margin-bottom: 0;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 
 
 .footer__copyrihtg {
@@ -556,22 +532,31 @@ footer {
     }
 }
 
+@media (min-width:992px) {
 
-@media screen and (max-width: 500px) {
+    .quien-soy {
+        flex-direction: row;
+    }
+
+    .menu-nav {
+        flex-direction: row;
+    }
+
     .container-fluid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
     }
 
-    .logo {
-        margin-left: 30px;
+    .qs-1, .qs-2 {
+        width: 50%;
+        min-width: 50%
     }
 
-    .carrusel {
-        width: auto;
+    footer {
+        flex-direction: row;
     }
 
-
-
+    .qs__img{
+        margin: 10% 10% 0 10%;
+width: auto; 
+    }
 }
