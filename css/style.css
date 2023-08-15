@@ -271,20 +271,20 @@ nav ul li a:hover {
     color: rgb(146, 15, 15);
 }
 
-.contenedor-articulos1 {
-    display: flex;
-    justify-content: space-around;
+.contenedor-articulos {
+    padding: 20px;
 }
 
-.contenedor-articulos2 {
-    display: flex;
-    justify-content: space-around;
+.contenedor-articulos .col-12 {
+    margin-bottom: 20px;
 }
 
 .articulo {
+    display: flex;
+    align-items: center;
+    height: 100%;
     background-color: rgb(235, 228, 228);
     border: solid rgb(204, 181, 181) 2px;
-    margin: 50px;
     padding: 10px;
     border-radius: 15px;
     border: solid rgb(44, 41, 41) 3px;
@@ -312,8 +312,14 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.footer-int {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .tms {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 254, 254);
     text-align: center;
     padding: 30px;
 }
@@ -328,8 +334,7 @@ nav ul li a:hover {
 }
 
 .scg {
-    margin-bottom: 5px;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
 .scg a {
