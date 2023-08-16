@@ -64,38 +64,43 @@
         <section class="contacto-form container">
             <h2>CONTAC<span>TO</span></h2>
             <div class="contenedor-contacto">
-                <div class="contacto-izq">
-                    <!-- <img src=" img/logo-gmail.png" alt="logo de Gmail"> -->
-                    <p>GMAIL: luciafadda3@gmail.com</p>
-                    <!-- <img src="img/logo-telefono.png" alt="logo de teléfono de contacto"> -->
-                    <p>CELULAR: +54 221 3140019</p>
-                    <!-- <img src="img/logo-ubicacion.png" alt="logo de ubicación"> -->
-                    <p>UBICACIÓN: LA PLATA, BUENOS AIRES, ARGENTINA</p>
+                <div class="row align-items-stretch">
+                    <div class="col-12 col-lg-6">
+                        <div class="contacto-izq">
+                            <!-- <img src=" img/logo-gmail.png" alt="logo de Gmail"> -->
+                            <p>GMAIL: luciafadda3@gmail.com</p>
+                            <!-- <img src="img/logo-telefono.png" alt="logo de teléfono de contacto"> -->
+                            <p>CELULAR: +54 221 3140019</p>
+                            <!-- <img src="img/logo-ubicacion.png" alt="logo de ubicación"> -->
+                            <p>UBICACIÓN: LA PLATA, BUENOS AIRES, ARGENTINA</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <form action=".php" class="form">
+                            <div>
+                                <label for="nombre">Nombre<span>*</span></label>
+                                <input type="text" name="nombre" id="">
+                            </div>
+                            <div>
+                                <label for="nombre">Apellido<span>*</span></label>
+                                <input type="text" name="apellido" id="">
+                            </div>
+                            <div>
+                                <label for="@email" required="">Correo electrónico<span>*</span></label>
+                                <input type="email" name="@email" id="" placeholder="@email">
+                            </div>
+                            <div>
+                                <label for="password">Asunto</label>
+                                <input type="text" name="asunto" id="">
+                            </div>
+                            <div>
+                                <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                            </div>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar datos">
+                        </form>
+                    </div>
                 </div>
-
-                <form action=".php" class="form">
-                    <div>
-                        <label for="nombre">Nombre<span>*</span></label>
-                        <input type="text" name="nombre" id="">
-                    </div>
-                    <div>
-                        <label for="nombre">Apellido<span>*</span></label>
-                        <input type="text" name="apellido" id="">
-                    </div>
-                    <div>
-                        <label for="@email" required="">Correo electrónico<span>*</span></label>
-                        <input type="email" name="@email" id="" placeholder="@email">
-                    </div>
-                    <div>
-                        <label for="password">Asunto</label>
-                        <input type="text" name="asunto" id="">
-                    </div>
-                    <div>
-                        <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    </div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar datos">
-                </form>
             </div>
         </section>
     </main>
