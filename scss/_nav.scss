@@ -4,7 +4,7 @@
     transition: all 2s ease;
 }
 
-.logo:hover {
+&:hover {
     transform: scale(1.1, 1.1);
 }
 
@@ -17,8 +17,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: solid rgb(179, 8, 8) 5px;
-    border-bottom: solid rgb(179, 8, 8) 1px;
+    border-top: solid $fondo1 5px;
+    border-bottom: solid $fondo1 1px;
     cursor: pointer;
 }
 
