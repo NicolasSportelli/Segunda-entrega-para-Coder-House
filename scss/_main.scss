@@ -13,22 +13,22 @@ main {
         text-align: center;
         font-size: 3rem;
         font-weight: 400;
-    }
 
-    .texto-carrusel p {
-        text-align: center;
-        font-size: 20px;
-        margin: 20px;
+        & p {
+            text-align: center;
+            font-size: 20px;
+            margin: 20px;
+        }
     }
 
     .botones-carrusel {
         text-align: center;
         padding: 20px;
-    }
 
-    .botones-carrusel button a {
-        padding: 10px;
-        color: rgb(223, 210, 210);
+        & button a {
+            padding: 10px;
+            color: rgb(223, 210, 210);
+        }
     }
 
     .boton {
@@ -41,11 +41,11 @@ main {
         color: white;
         background-color: rgb(128, 17, 17);
 
-    }
+        &:hover {
+            color: white;
+            background-color: rgb(102, 12, 12);
+        }
 
-    &:hover {
-        color: white;
-        background-color: rgb(102, 12, 12);
     }
 
     .texto-botones {
@@ -90,52 +90,51 @@ main {
         color: white;
         background-color: #64605A;
         text-align: center;
-    }
 
-    .qs-2 a:hover {
-        color: white;
-        background-color: #7e7d7b;
+        & a:hover {
+            color: white;
+            background-color: #7e7d7b;
+        }
     }
 
     .qs-2 {
         text-align: center;
+
+        & h2 {
+            font-size: 3rem;
+
+            & span {
+                color: $fondo1;
+            }
+        }
+
+        & h3 {
+            font-size: 1.5rem;
+        }
+
+        & h4 {
+            font-size: 1rem;
+        }
+
+        & p {
+            text-align: center;
+            margin: 20px;
+        }
     }
 
-    .qs-2 h2 span {
-        color: $fondo1;
-    }
-
-    .qs-2 h2 {
-        font-size: 3rem;
-    }
-
-    .qs-2 h3 {
-        font-size: 1.5rem;
-    }
-
-
-    .qs-2 h4 {
-        font-size: 1rem;
-    }
-
-    .qs-2 p {
-        text-align: center;
-        margin: 20px;
-
-    }
 
     .background-redes-qs {
         background-color: $fondo1;
         padding: 30px;
     }
 
-    .qs-redes .img img {
-        width: 80px;
-        padding: 30px;
-    }
-
     .qs-redes {
         text-align: center;
+
+        & .img img {
+            width: 80px;
+            padding: 30px;
+        }
     }
 
     /*  main SERVICIOS */
@@ -147,6 +146,18 @@ main {
     #servicios {
         text-align: center;
         margin-top: 20px;
+
+        & h2 {
+            align-items: center;
+            font-size: 3rem;
+            margin-top: 90px;
+            margin-bottom: 70px;
+            font-weight: 500;
+
+            & span {
+                color: $fondo1;
+            }
+        }
     }
 
     .servicios {
@@ -158,24 +169,14 @@ main {
 
     }
 
-    #servicios h2 {
-        align-items: center;
-        font-size: 3rem;
-        margin-top: 90px;
-        margin-bottom: 70px;
-        font-weight: 500;
-    }
-
-    #servicios h2 span {
-        color: $fondo1;
-    }
 
     .contenedor-articulos {
         padding: 20px;
-    }
 
-    .contenedor-articulos .col-12 {
-        margin-bottom: 20px;
+        & .col-12 {
+            margin-bottom: 20px;
+        }
+
     }
 
     .articulo {
@@ -188,23 +189,22 @@ main {
         border-radius: 15px;
         border: solid rgb(44, 41, 41) 3px;
         text-align: center;
+
+        &:hover {
+            background-color: rgb(248, 248, 248);
+        }
+
+        & h3 {
+            color: $fondo1;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+
+        & p {
+            padding: 20px;
+        }
+
     }
-
-    .articulo:hover {
-        background-color: rgb(248, 248, 248);
-    }
-
-    .articulo h3 {
-        color: $fondo1;
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-
-    .articulo p {
-        padding: 20px;
-    }
-
-
 
     .fondo-footer-servicios {
         background-color: $fondo2;
@@ -221,10 +221,10 @@ main {
         color: rgb(255, 254, 254);
         text-align: center;
         padding: 30px;
-    }
 
-    .tms:hover {
-        color: rgb(204, 190, 190);
+        &:hover {
+            color: rgb(204, 190, 190);
+        }
     }
 
     .ser {
@@ -234,58 +234,54 @@ main {
 
     .scg {
         margin-bottom: 20px;
-    }
 
-    .scg a {
-        color: black;
-    }
+        & a {
+            color: black;
+        }
 
-    .scg button {
-        border-radius: 5px;
-        padding: 7px;
-    }
+        & button {
+            border-radius: 5px;
+            padding: 7px;
 
-    .scg button:hover {
-        background-color: rgb(216, 206, 206);
+            &:hover {
+                background-color: rgb(216, 206, 206);
+            }
+
+        }
     }
 
     /* PROYECTOS*/
-
 
     #proyectos {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
 
-    #proyectos h2 {
-        align-items: center;
-        font-size: 3rem;
-        font-weight: 500;
-    }
+        & h2 {
+            align-items: center;
+            font-size: 3rem;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 60px;
 
-    #proyectos h2 span {
-        color: $fondo1;
-    }
+            & span {
+                color: $fondo1;
+            }
+        }
 
-
-    #proyectos h2 {
-        text-align: center;
-        margin-top: 60px;
-    }
-
-    #proyectos p {
-        text-align: center;
-        padding: 7px;
+        & p {
+            text-align: center;
+            padding: 7px;
+        }
     }
 
     .proyectos__logo {
         width: 200px;
         transition: all 2s ease;
-    }
 
-    .proyectos__logo:hover {
-        transform: scale(1.1, 1.1);
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
     }
 
     .contenedor-footer {
@@ -312,17 +308,16 @@ main {
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         color: white;
         background-color: $fondo1;
-    }
 
-    .boton:hover {
-        color: white;
-        background-color: rgb(102, 12, 12);
-    }
+        &:hover {
+            color: white;
+            background-color: rgb(102, 12, 12);
+        }
 
-    .boton a {
-        color: white;
+        & a {
+            color: white;
+        }
     }
-
 
     .galeria__container .col-12 {
         margin-bottom: 30px;
@@ -333,6 +328,14 @@ main {
         margin-bottom: 20px;
         position: relative;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+        &:nth-child(1) {
+            grid-row-start: span 3;
+        }
+
+        &:nth-child(2) {
+            grid-row-start: span 3;
+        }
     }
 
     .galeria__img {
@@ -352,21 +355,7 @@ main {
         padding-left: 5px;
     }
 
-    .galeria__item:nth-child(1) {
-        grid-row-start: span 3;
-    }
-
-    .galeria__item:nth-child(2) {
-        grid-row-start: span 3;
-    }
-
-
     /* CONTACTO*/
-
-
-    .contacto-form h2 span {
-        color: $fondo1;
-    }
 
     .contacto-form h2 {
         text-align: center;
@@ -375,6 +364,10 @@ main {
         font-size: 3rem;
         font-weight: 500;
         font-family: 'Source Serif 4', serif;
+
+        & h2 span {
+            color: $fondo1;
+        }
     }
 
     .form label,
@@ -390,33 +383,36 @@ main {
     .contenedor-izq {
         display: flex;
         justify-content: center;
-    }
 
-    .contacto-izq img {
-        display: flex;
-        flex-direction: column;
-        width: 40px;
-        margin: center;
-        padding: 20px;
+        & img {
+            display: flex;
+            flex-direction: column;
+            width: 40px;
+            margin: center;
+            padding: 20px;
+        }
     }
 
     .contacto-izq {
         font-size: 1.2rem;
-    }
 
-    .contacto-izq p {
-        margin: 50px;
+        & p {
+            margin: 50px;
+        }
     }
 
     form {
         margin: 30px;
         padding: 20px;
-    }
 
-    form label span {
-        color: $fondo1;
-    }
+        & label span {
+            color: $fondo1;
 
+            & span {
+                color: $fondo1;
+            }
+        }
+    }
 
     .contacto-footer {
         height: 15vh;
