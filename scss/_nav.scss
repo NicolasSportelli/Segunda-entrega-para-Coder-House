@@ -1,5 +1,16 @@
 nav {
-    .logo {
+
+    #inicio-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: solid $fondo1 5px;
+        border-bottom: solid $fondo1 1px;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    a .logo {
         position: relative;
         width: 75px;
         transition: all 2s ease;
@@ -9,41 +20,27 @@ nav {
         }
     }
 
-    #inicio-nav {
-        background-color: white;
-    }
-
-    nav {
-        background-color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-top: solid $fondo1 5px;
-        border-bottom: solid $fondo1 1px;
-        cursor: pointer;
-
-        & ul li a:hover {
-            color: rgb(236, 225, 225);
-            background-color: rgb(179, 8, 8);
-            transition: all .3s;
-            border-radius: 5px;
-        }
-    }
-
     .menu-nav {
         margin-bottom: unset;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         padding: 10px;
 
-        & li {
+        li {
             list-style: none;
             padding: 10px;
             font-size: 15px;
 
-            & a {
+            a {
                 color: black;
+
+                &:hover {
+                    color: rgb(236, 225, 225);
+                    background-color: rgb(179, 8, 8);
+                    transition: all .3s;
+                    border-radius: 5px;
+                }
             }
         }
     }
