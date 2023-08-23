@@ -23,3 +23,9 @@ footer {
     }
 
 }
+
+@media (min-width:992px) {
+    footer {
+        flex-direction: row;
+    }
+}

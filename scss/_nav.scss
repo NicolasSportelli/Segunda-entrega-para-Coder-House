@@ -1,13 +1,19 @@
-nav {
+#inicio-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid $fondo1 5px;
+    border-bottom: solid $fondo1 1px;
+    cursor: pointer;
+    background-color: white;
 
-    #inicio-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-top: solid $fondo1 5px;
-        border-bottom: solid $fondo1 1px;
-        cursor: pointer;
-        background-color: white;
+    .container-fluid {
+        flex-direction: column;
+        align-items:normal;
+    }
+
+    .navbar-expand {
+        justify-content: center;
     }
 
     a .logo {
@@ -23,7 +29,7 @@ nav {
     .menu-nav {
         margin-bottom: unset;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         padding: 10px;
 
@@ -63,6 +69,18 @@ nav {
             color: rgb(236, 225, 225);
             background-color: rgb(39, 34, 34);
             border-radius: 5px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    #inicio-nav {
+        .menu-nav {
+            flex-direction: row;
+        }
+
+        .container-fluid {
+            flex-direction: row;
         }
     }
 }

@@ -2,7 +2,7 @@
 
 main {
     .carrusel {
-        width: 60%;
+        width: 100%;
         margin: auto;
         margin-bottom: 100px;
         background-color: rgb(241, 236, 236);
@@ -417,5 +417,44 @@ main {
 
     .contacto-footer {
         height: 15vh;
+    }
+}
+
+
+@media (max-width:1020px) {
+    main {
+        .header-aline {
+            justify-content: space-around !important;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    main {
+        .galeria__item {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@media (min-width:992px) {
+    main {
+        .carrusel {
+            width: 60%;
+        }
+
+        .quien-soy {
+            flex-direction: row;
+        }
+
+        .qs-1,
+        .qs-2 {
+            width: 50%;
+            min-width: 50%
+        }
+
+        .qs__img {
+            width: auto;
+        }
     }
 }
