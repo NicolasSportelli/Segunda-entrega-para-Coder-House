@@ -94,11 +94,11 @@
                         <form action=".php" class="form animate__animated animate__bounceInDown">
                             <div>
                                 <label for="nombre">Nombre<span>*</span></label>
-                                <input type="text" name="nombre" id="">
+                                <input type="text" name="nombre" id="" placeholder="Nombre">
                             </div>
                             <div>
                                 <label for="nombre">Apellido<span>*</span></label>
-                                <input type="text" name="apellido" id="">
+                                <input type="text" name="apellido" id="" placeholder="Apellido">
                             </div>
                             <div>
                                 <label for="@email" required="">Correo electrónico<span>*</span></label>
@@ -106,10 +106,12 @@
                             </div>
                             <div>
                                 <label for="password">Asunto</label>
-                                <input type="text" name="asunto" id="">
+                                <input type="text" name="asunto" id="" placeholder="Asunto">
                             </div>
                             <div>
-                                <textarea name="Mensaje" id="" cols="28" rows="10" placeholder="Mensaje"></textarea>
+                                <textarea class="caja-mensaje" name="Mensaje" id="" cols="28" rows="10"
+                                    placeholder="Mensaje">
+                                </textarea>
                             </div>
                             <input type="submit" value="Enviar">
                             <input type="reset" value="Borrar datos">
