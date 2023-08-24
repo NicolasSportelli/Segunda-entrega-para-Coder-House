@@ -109,12 +109,13 @@ main {
 
 .qs-2 a {
     display: block;
-    margin: 20px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    color: white;
     background-color: #64605A;
     text-align: center;
 
@@ -381,7 +382,8 @@ main {
     position: absolute;
     bottom: 0;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
+    height: 90px;
     width: 100%;
     margin: 0;
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
@@ -452,11 +454,18 @@ form {
 }
 
 
+.mapa {
+    width: 40px;
+}
 
 @media (max-width:1020px) {
     main {
         .header-aline {
             justify-content: space-around !important;
+        }
+
+        .mapa {
+            width: auto;
         }
     }
 }
@@ -465,6 +474,10 @@ form {
     main {
         .galeria__item {
             grid-template-columns: repeat(4, 1fr);
+        }
+
+        .mapa {
+            width: auto;
         }
     }
 }
@@ -486,6 +499,10 @@ form {
         }
 
         .qs__img {
+            width: auto;
+        }
+
+        .mapa {
             width: auto;
         }
     }
