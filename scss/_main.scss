@@ -84,6 +84,7 @@ main {
     }
 }
 
+
 /* main QUIEN SOY*/
 
 .qs__img {
@@ -461,54 +462,4 @@ form {
 
 .mapa {
     width: 40px;
-}
-
-@media (max-width:1020px) {
-    main {
-        .header-aline {
-            justify-content: space-around !important;
-        }
-
-        .mapa {
-            width: auto;
-        }
-    }
-}
-
-@media (min-width:768px) {
-    main {
-        .galeria__item {
-            grid-template-columns: repeat(4, 1fr);
-        }
-
-        .mapa {
-            width: auto;
-        }
-    }
-}
-
-@media (min-width:992px) {
-    main {
-        .carrusel {
-            width: 60%;
-        }
-
-        .quien-soy {
-            flex-direction: row;
-        }
-
-        .qs-1,
-        .qs-2 {
-            width: 50%;
-            min-width: 50%
-        }
-
-        .qs__img {
-            width: auto;
-        }
-
-        .mapa {
-            width: auto;
-        }
-    }
 }

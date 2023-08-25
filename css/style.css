@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -60,12 +61,21 @@ body {
       background-color: #272222;
       border-radius: 5px; }
 
-@media (min-width: 992px) {
-  #inicio-nav .menu-nav {
-    flex-direction: row; }
-  #inicio-nav .container-fluid {
-    flex-direction: row; } }
+/*
 
+@media (min-width:992px) {
+    #inicio-nav {
+        .menu-nav {
+            flex-direction: row;
+        }
+
+        .container-fluid {
+            flex-direction: row;
+        }
+    }
+}
+
+*/
 /* main index*/
 main .carrusel {
   width: 100%;
@@ -395,32 +405,6 @@ form {
 .mapa {
   width: 40px; }
 
-@media (max-width: 1020px) {
-  main .header-aline {
-    justify-content: space-around !important; }
-  main .mapa {
-    width: auto; } }
-
-@media (min-width: 768px) {
-  main .galeria__item {
-    grid-template-columns: repeat(4, 1fr); }
-  main .mapa {
-    width: auto; } }
-
-@media (min-width: 992px) {
-  main .carrusel {
-    width: 60%; }
-  main .quien-soy {
-    flex-direction: row; }
-  main .qs-1,
-  main .qs-2 {
-    width: 50%;
-    min-width: 50%; }
-  main .qs__img {
-    width: auto; }
-  main .mapa {
-    width: auto; } }
-
 /* FOOTER */
 footer {
   background-color: #A4171E;
@@ -446,6 +430,50 @@ footer {
     padding-left: 10px;
     color: #fff; }
 
-@media (min-width: 992px) {
+/*
+@media only screen and (min-width:992px) {
+    footer {
+        flex-direction: row;
+    }
+}
+*/
+/* para DESKTOP */
+@media only screen and (min-width: 992px) {
+  #inicio-nav .menu-nav {
+    flex-direction: row; }
+  #inicio-nav .container-fluid {
+    flex-direction: row; } }
+
+/*para pantalla de tamaño medium*/
+@media only screen and (max-width: 1020px) {
+  main .header-aline {
+    justify-content: space-around !important; }
+  main .mapa {
+    width: auto; } }
+
+/* para tablet*/
+@media only screen and (min-width: 768px) {
+  main .galeria__item {
+    grid-template-columns: repeat(4, 1fr); }
+  main .mapa {
+    width: auto; } }
+
+/* para DESKTOP */
+@media only screen and (min-width: 992px) {
+  main .carrusel {
+    width: 60%; }
+  main .quien-soy {
+    flex-direction: row; }
+  main .qs-1,
+  main .qs-2 {
+    width: 50%;
+    min-width: 50%; }
+  main .qs__img {
+    width: auto; }
+  main .mapa {
+    width: auto; } }
+
+/* para DESKTOP */
+@media only screen and (min-width: 992px) {
   footer {
     flex-direction: row; } }
