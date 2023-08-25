@@ -1,0 +1,90 @@
+#inicio-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid $fondo1 5px;
+    border-bottom: solid $fondo1 1px;
+    cursor: pointer;
+    background-color: white;
+
+    .container-fluid {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .navbar-expand {
+        justify-content: center;
+    }
+
+    a .logo {
+        position: relative;
+        width: 75px;
+        transition: all 2s ease;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
+
+    .menu-nav {
+        margin-bottom: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+
+        li {
+            list-style: none;
+            padding: 10px;
+            font-size: 15px;
+
+            a {
+                color: black;
+
+                &:hover {
+                    color: rgb(236, 225, 225);
+                    background-color: rgb(179, 8, 8);
+                    transition: all .3s;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        margin-right: 0
+    }
+
+    .redes-sociales a img {
+        padding: 10px;
+        width: 40px;
+    }
+
+    .img img {
+        width: 30px;
+        margin: 10px;
+        transition: all .5s;
+
+        &:hover {
+            color: rgb(236, 225, 225);
+            background-color: rgb(39, 34, 34);
+            border-radius: 5px;
+        }
+    }
+}
+
+/*
+
+@media (min-width:992px) {
+    #inicio-nav {
+        .menu-nav {
+            flex-direction: row;
+        }
+
+        .container-fluid {
+            flex-direction: row;
+        }
+    }
+}
+
+*/

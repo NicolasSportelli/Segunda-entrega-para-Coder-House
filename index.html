@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--agregar un scroll que acompañe toda la página que diga "hacia arriba" fijo en la pantalla-->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Traductora Pública de inglés-español especializada en medicina y marketing">
+    <meta name="keywors" content="ingles, traducción, medicina, libros, diseño web, páginas web, marqueting">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,800;1,300;1,700&display=swap"
         rel="stylesheet">
-    <title>FaddaTranslations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FaddaTranslations | Traductora de médica y marqueting 🤚</title>
 </head>
 
 <body>
-    <nav id="inicio-nav" class="navbar navbar-expand-lg sticky-top container-fluid">
-        <div class="container-fluid">
-            <a class="navbar-brand contenedor-logo" href="#"><img class="logo" src="./img/logo.png" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div>
+    <header class="sticky-top">
+        <nav id="inicio-nav" class="navbar navbar-expand-lg container-fluid">
+            <div class="container-fluid header-aline">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="navbar-brand contenedor-logo" href="#"><img class="logo" src="./img/logo.png"
+                            alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="menu-nav">
                         <li>
-                            <a href="#">Inicio</a>
+                            <a href="./index.html">Inicio</a>
                         </li>
                         <li>
                             <a href="./pages/quiensoy.html">Quién soy</a>
@@ -45,98 +49,133 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="redes-sociales navbar navbar-expand">
-                <a href="https://www.linkedin.com/in/luciafadda/" target="_blank" class="img">
-                    <img src="./img/linkedin.ico" alt="logo linkedin">
-                </a>
-                <a href="https://wa.me/2364512339" target="_blank" class="img">
-                    <img src="./img/whatsapp.ico" alt="logo whatsapp">
-                </a>
-                <a href="mailto:luciafadda3@gmail.com" target="_blank" class="gmail img">
-                    <img src="./img/gmail.ico" alt="logo gmail">
-                </a>
-                <a href="https://www.instagram.com/fadda.translations/?hl=es-la" target="_blank" class="img">
-                    <img src="./img/instagram.ico" alt="logo instagram">
-                </a>
-            </div>
-        </div>
-    </nav>
-    <!-- <nav id="inicio-nav" class="sticky-top">
-        <a class="contenedor-logo" href="#">
-            <img class="logo" src="./img/logo.png" alt="Logo">
-        </a>
-
-        <ul class="menu-nav">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="./pages/quiensoy.html">Quién soy</a></li>
-            <li><a href="./pages/servicios.html">Servicios</a></li>
-            <li><a href="./pages/proyectos.html">Proyectos</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-        <div class="redes-sociales">
-            <a href="https://www.linkedin.com/in/luciafadda/" target="_blank" class="img">
-                <img src="img/linkedin.ico" alt="logo linkedin">
-            </a>
-            <a href="https://wa.me/2364512339" target="_blank" class="img">
-                <img src="img/whatsapp.ico" alt="logo whatsapp">
-            </a>
-            <a href="mailto:luciafadda3@gmail.com" target="_blank" class="gmail img">
-                <img src="img/gmail.ico" alt="logo gmail">
-            </a>
-            <a href="https://www.instagram.com/fadda.translations/?hl=es-la" target="_blank" class="img">
-                <img src="img/Instagram.ico" alt="logo instagram">
-            </a>
-        </div>
-    </nav> -->
-
-    <div class="texto-botones">
-        <div class="texto-carrusel">
-            <h1>Lucía Fadda</h1>
-            <p>Traductora Pública de inglés-español especializada en medicina y marketing</p>
-        </div>
-
-        <!-- <div class="botones-carrusel">
-            <button class="boton"><a href="">Servicios</a></button>
-            <button class="boton"><a href="">Contactos</a></button>
-        </div> -->
-    </div>
-
-    <section class="carrusel">
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner carrusel__fotos">
-                <div class="carousel-item active">
-                    <img src="./img/1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/3.jpg" class="d-block w-100" alt="...">
+                <div class="redes-sociales navbar navbar-expand">
+                    <a href="https://www.linkedin.com/in/luciafadda/" target="_blank" class="img">
+                        <img src="./img/linkedin.ico" alt="logo linkedin">
+                    </a>
+                    <a href="https://wa.me/2364512339" target="_blank" class="img">
+                        <img src="./img/whatsapp.ico" alt="logo whatsapp">
+                    </a>
+                    <a href="mailto:luciafadda3@gmail.com" target="_blank" class="gmail img">
+                        <img src="./img/gmail.ico" alt="logo gmail">
+                    </a>
+                    <a href="https://www.instagram.com/fadda.translations/?hl=es-la" target="_blank" class="img">
+                        <img src="./img/instagram.ico" alt="logo instagram">
+                    </a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="texto-botones">
+            <div class="texto-carrusel">
+                <h1 class="animate__animated animate__fadeIn">Lucía Fadda</h1>
+                <p class="animate__animated animate__zoomIn">Traductora Pública de inglés-español especializada en
+                    medicina y marketing
+                </p>
+            </div>
         </div>
 
-    </section>
+        <section class="carrusel">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner carrusel__fotos">
+                    <div class="carousel-item active">
+                        <img src="./img/1.jpg" class="d-block w-100" alt="foto de una biblioteca">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/2.jpg" class="d-block w-100" alt="foto de libros">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/3.jpg" class="d-block w-100" alt="foto de libros y un anotador">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section>
+            <div class="texto-index">
+                <h5 class="titulo-texto-index">
+                    <span>"</span>
+                    La Importancia Vital del Trabajo como Traductor
+                    <span>"</span>
+                </h5>
+                <p class="texto-index-p">
+                    En un mundo interconectado donde las fronteras lingüísticas a menudo son desafíos insuperables,
+                    los traductores se alzan
+                    como los artífices de la comunicación global. Su labor trasciende las palabras y abarca la
+                    esencia misma de la
+                    comprensión mutua. Desde la literatura hasta la tecnología, el trabajo de los traductores es el
+                    enlace esencial que
+                    permite que las ideas viajen sin obstáculos.
 
+                    Los traductores no solo convierten palabras de un idioma a otro; son los guardianes del
+                    significado y los embajadores de
+                    la cultura. Capturan los matices, las emociones y los contextos que dan vida a las palabras. En
+                    la era de la
+                    globalización, donde los negocios, la diplomacia y la colaboración cruzan fronteras, los
+                    traductores desempeñan un papel
+                    crucial al asegurarse de que los mensajes se entreguen con precisión y respeto cultural.
+
+                    Desde textos técnicos hasta obras literarias, los traductores son esenciales para mantener la
+                    integridad del contenido
+                    original. Su habilidad para adaptar y localizar el mensaje a diferentes audiencias garantiza que
+                    las ideas resuenen en
+                    todas partes. Sin ellos, las barreras lingüísticas serían murallas insalvables, obstaculizando
+                    el intercambio de
+                    conocimiento y el enriquecimiento mutuo.
+
+                    En resumen, el trabajo del traductor es un acto de habilidad, comprensión y empatía. Son los
+                    mediadores entre los
+                    idiomas y las culturas, y su contribución es fundamental para forjar conexiones globales
+                    sólidas. En un mundo que valora
+                    la comunicación instantánea, los traductores son los arquitectos que construyen puentes
+                    lingüísticos y fomentan el
+                    entendimiento entre personas de todo el mundo.
+                </p>
+                <p class="emojis">⚪🔴⚫</p>
+                <p>
+                    <span>"</span>La labor de Lucía Fadda es un testimonio vivo de cómo la traducción va más allá de la
+                    simple transposición de un idioma
+                    a otro. Es una forma de arte que requiere un profundo entendimiento de las sutilezas culturales y
+                    lingüísticas que
+                    informan cada expresión. Su capacidad para captar los matices y las intenciones del autor original
+                    la convierte en una
+                    intérprete magistral, permitiendo que los lectores de diferentes culturas se conecten con la esencia
+                    de la obra.<span>"</span>
+                </p>
+                <p class="emojis">⚪🔴⚫</p>
+                <p>
+                    <span>"</span>Además de ser una artista lingüística, Lucía Fadda es una embajadora del entendimiento
+                    y la
+                    colaboración global. Su
+                    trabajo derriba las barreras lingüísticas que a menudo obstaculizan la comunicación efectiva entre
+                    diferentes culturas y
+                    naciones. Ella construye puentes que permiten que las ideas fluyan sin obstáculos, fomentando la
+                    comprensión mutua y el
+                    enriquecimiento cultural.<span>"</span>
+                </p>
+                <p class="emojis">⚪🔴⚫</p>
+
+        </section>
+    </main>
     <footer class="footer">
         <p class="footer__copyrihtg">copyright-Lucia Fadda</p>
         <div class="redes-sociales">
